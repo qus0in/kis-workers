@@ -17,7 +17,7 @@ export default {
 		}
 		const [cdMap, categoryMap] = accountMaps();
 		const data = (await fetchAccount(token, akMap.get(accountId)!, skMap.get(accountId)!, accountId, cdMap.get(accountId)! as string))[
-			categoryMap.get(accountId)!
+			categoryMap.get(accountId)! as number
 		];
 		return new Response(JSON.stringify(data), { status: 200 });
 	},

@@ -6,4 +6,5 @@ npm create cloudflare@latest -- kis-workers
 # https://developers.cloudflare.com/workers/wrangler/commands/#secret
 wrangler secret put ???
 wrangler kv namespace create ???
+wrangler tail
 ```

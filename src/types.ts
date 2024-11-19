@@ -27,4 +27,11 @@ export interface AccountRequestParamsDTO {
 	BSPR_BF_DT_APLY_YN: ''; // 기준가이전일자적용여부
 }
 
-export interface AccountResponseDTO {}
+export interface AccountResponseDTO {
+	pchs_amt: number; // 매입금액
+	evlu_amt: number; // 평가금액
+	evlu_pfls_amt: number; // 평가손익금액
+	crdt_lnd_amt: number; // 신용대출금액
+	real_nass_amt: number; // 실제순자산금액
+	whol_weit_rt: number; // 전체비중율
+}
