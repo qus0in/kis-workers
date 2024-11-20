@@ -13,7 +13,7 @@ export default {
 				return new Response('Invalid account id', { status: 400 });
 			}
 			token = (await fetchToken(akMap.get(accountId)!, skMap.get(accountId)!)).access_token;
-			await env.kis_kv.put(tokenKey, token, { expirationTtl: 60 * 60 * 24 });
+			await env.kis_kv.put(tokenKey, token, { expirationTtl: 60 * 60 * 12 });
 		}
 		const [cdMap, categoryMap] = accountMaps();
 		const data = (await fetchAccount(token, akMap.get(accountId)!, skMap.get(accountId)!, accountId, cdMap.get(accountId)! as string))[
