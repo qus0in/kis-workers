@@ -16,12 +16,13 @@ export function keyMaps(env: Env) {
 
 export function accountMaps() {
 	const cdMap = new Map<string, string>();
-	const categoryMap = new Map<string, number>();
+	// const categoryMap = new Map<string, number>();
 	cdMap.set('63691813', '22');
-	categoryMap.set('63691813', 1);
+	// categoryMap.set('63691813', 1);
 	cdMap.set('64033412', '22');
-	categoryMap.set('64033412', 1);
+	// categoryMap.set('64033412', 1);
 	cdMap.set('69393152', '01');
-	categoryMap.set('69393152', 2);
-	return [cdMap, categoryMap];
+	// categoryMap.set('69393152', 2);
+	// return [cdMap, categoryMap];
+	return cdMap;
 }
